@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ingredients_text_size">20sp</dimen>
+    <dimen name="ingredients_title_size">22sp</dimen>
+    <dimen name="steps_title_text_size">26sp</dimen>
+    <dimen name="empty_video_text_size">26sp</dimen>
+    <dimen name="recipe_title_text_size">26sp</dimen>
+    <dimen name="step_text_size">22sp</dimen>
+
+    <dimen name="card_view_height">140dp</dimen>
+</resources>

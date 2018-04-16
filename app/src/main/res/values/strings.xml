@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Baking App</string>
+
+    <string name="ingredients">Ingredients :</string>
+    <string name="steps">Steps</string>
+    <string name="no_video_for_this_step">No Video for this Step</string>
+    <string name="next_btn_text">Next</string>
+    <string name="previous_btn_text">Previous</string>
+    <string name="widget_first_time_text">Open a recipe on the app to show the Ingredients</string>
+    <string name="the_recipe_ingredients">The Recipe Ingredients</string>
+    <string name="dot_symbol">.</string>
+    <string name="successful_response">response is successful</string>
+    <string name="failed_json_parsing">failed to parse json</string>
+    <string name="step_index">the step index :</string>
+
+</resources>

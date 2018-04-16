@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".RecipeDetailsFragment">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/colorPrimary"
+            android:layout_margin="@dimen/layout_margin"
+            android:paddingTop="@dimen/layout_padding"
+            android:paddingBottom="@dimen/layout_padding"
+            android:id="@+id/ingredients_layout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ingredients_title"
+                android:text="@string/ingredients"
+                android:textSize="@dimen/ingredients_title_size"
+                android:layout_marginStart="@dimen/Ingredient_title_margin"
+                android:textColor="@android:color/white"
+                app:layout_constraintTop_toTopOf="@id/ingredients_layout"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ingredients_detail"
+                tools:text="ingredient 1"
+                android:layout_margin="@dimen/layout_margin"
+                android:textSize="@dimen/ingredients_text_size"
+                android:lineSpacingExtra="2dp"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/steps"
+            android:id="@+id/steps_title"
+            android:textSize="@dimen/steps_title_text_size"
+            app:layout_constraintTop_toBottomOf="@id/ingredients_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="@dimen/layout_margin"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/steps_recyclerView"
+            app:layout_constraintTop_toBottomOf="@+id/steps_title"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="@dimen/layout_margin"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>
